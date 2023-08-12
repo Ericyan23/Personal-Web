@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Sihan Yan's sharing program">
+    <title>Program - Blog</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/subblog.css">
+</head>
+
+<body>
+    <!-- nav:home,album,blog,about,join -->
+    <nav>
+        <div class="nav_title"><a href="index.html"><strong class="nav_title_strong">SIHAN</strong>MY PROFILE</a></div>
+        <a href="index.html">HOME</a>
+        <a href="album.html">ALBUM</a>
+        <a href="blog.html">BLOG</a>
+        <a href="about.html">ABOUT</a>
+        <a href="join.html">JOIN</a>
+    </nav>
+
+
+    <main>
+        <h3 id="-">Notes: Numpy Basic</h3>
+        <h4 id="basic">basic</h4>
+        <pre><code class="lang-python">improt numpy as <span class="hljs-built_in">np</span>
+        array1 = <span class="hljs-built_in">np</span>.<span class="hljs-built_in">random</span>.randn(x,y)
+        //返回一个x行y列的随机<span class="hljs-built_in">array</span>，n代表正态分布
+        </code></pre>
+        <hr>
+        <pre><code class="lang-python">X<span class="hljs-selector-class">.ndim</span> <span class="hljs-comment">//find the numebr of dimensional array</span>
+        </code></pre>
+        <hr>
+        <pre><code class="lang-python">x<span class="hljs-selector-class">.shape</span> <span class="hljs-comment">//几乘几的array</span>
+        </code></pre>
+        <hr>
+        <ul>
+            <li>Numpy 中 Vectorization可以让array更容易计算</li>
+            <li>比较两个array之间的大小是分别比较每一个elements的大小并返回T or F</li>
+        </ul>
+        <hr>
+        <h4 id="index">index</h4>
+        <ul>
+            <li>从0开始计算</li>
+            <li>像dic一样改变elements的value
+                <pre><code class="lang-python"><span class="hljs-built_in">array</span> = <span class="hljs-built_in">np</span>.arange(<span class="hljs-number">10</span>) //不包括<span class="hljs-number">10</span>
+        array_slice = <span class="hljs-built_in">array</span>.[<span class="hljs-number">5</span>:<span class="hljs-number">8</span>]
+        array_slice[<span class="hljs-number">1</span>] = <span class="hljs-number">123</span> 
+        //change value <span class="hljs-keyword">in</span> slice whill also change original <span class="hljs-built_in">array</span>，这也会改变原本<span class="hljs-built_in">array</span>中的值
+        </code></pre>
+                <h4 id="transposing-arrays">transposing arrays</h4>
+                <pre><code class="lang-python">X.<span class="hljs-built_in">reshape</span>(x,y) <span class="hljs-comment">//改变成x行y列</span>
+        </code></pre>
+            </li>
+        </ul>
+
+
+
+
+    </main>
+</body>
+
+
+
+</html>
