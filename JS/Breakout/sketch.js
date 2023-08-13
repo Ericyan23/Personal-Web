@@ -18,10 +18,9 @@ const circle = {
 
 function setup() {
   let canvas = createCanvas(600, 400);
-  canvas.style('display', 'block');
   canvas.style('padding-top', '6vh');
   canvas.style('padding-bottom', '10vh');
-  canvas.style('margin-left', '25%');
+  canvas.style('margin-left', '400px');
   canvas.position(windowWidth / 2 - width / 2, windowHeight / 2 - height / 2);
   createBricks()
 }
