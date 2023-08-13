@@ -19,7 +19,7 @@ main {
     background-image: url('../image/main.jpg');
     background-size: cover;
     background-position: center center;
-    font-size: 8vw;
+    font-size: 10vw;
 }
 
 .container {

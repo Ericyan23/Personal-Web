@@ -16,12 +16,19 @@ nav {
     z-index: 1000;
 }
 
-.nav_title_strong {
-    font-size: 50px;
-    font-weight: bolder;
-}
-
 nav a {
     text-decoration: none;
     color: rgb(59, 84, 103);
+}
+
+.nav_title_strong {
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 600px) {
+    .nav_display {
+        display: none;
+    }
 }
