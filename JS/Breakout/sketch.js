@@ -21,7 +21,6 @@ function setup() {
   canvas.style('padding-top', '6vh');
   canvas.style('padding-bottom', '10vh');
   canvas.style('margin-left', '400px');
-  canvas.position(windowWidth / 2 - width / 2, windowHeight / 2 - height / 2);
   createBricks()
 }
 
