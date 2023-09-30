@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Sihan Yan's sharing program">
+    <meta name="description" content="Sihan Yan's sharing program">
     <title>Program - Blog</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/body.css">
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <!-- nav:home,album,blog,about,join -->
+    <!-- Navigation: Home, Album, Blog, About, Join -->
     <nav>
-        <div class="nav_title"><a href="index.html"><strong class="nav_title_strong">SIHAN</strong>MY PROFILE</a></div>
+        <div class="nav_title"><a href="index.html"><strong class="nav_title_strong">SIHAN</strong> MY PROFILE</a></div>
         <a href="index.html">HOME</a>
         <a href="album.html">ALBUM</a>
         <a href="blog.html">BLOG</a>
@@ -24,47 +24,52 @@
         <a href="join.html">JOIN</a>
     </nav>
 
-
     <main>
-        <h3 id="-">Notes: Numpy Basic</h3>
-        <h4 id="basic">basic</h4>
-        <pre><code class="lang-python">improt numpy as <span class="hljs-built_in">np</span>
-        array1 = <span class="hljs-built_in">np</span>.<span class="hljs-built_in">random</span>.randn(x,y)
-        //返回一个x行y列的随机<span class="hljs-built_in">array</span>，n代表正态分布
-        </code></pre>
+        <h3 id="-">Notes: Basic Numpy</h3>
+        <h4 id="basic">Basic</h4>
+        <p>Numpy is a powerful Python library for numerical computations. It's widely used for working with arrays and
+            matrices. Here are some fundamental concepts:</p>
+        <pre><code class="lang-python">import numpy as np
+array1 = np.random.randn(x, y)
+// Returns an x by y random array, where 'n' denotes a normal distribution
+</code></pre>
+        <p>The above code demonstrates how to create a random array with dimensions x by y using Numpy's random module.
+        </p>
         <hr>
-        <pre><code class="lang-python">X<span class="hljs-selector-class">.ndim</span> <span class="hljs-comment">//find the numebr of dimensional array</span>
-        </code></pre>
+        <pre><code class="lang-python">X.ndim // Find the number of dimensions in the array
+</code></pre>
+        <p>Use the <code>ndim</code> attribute to find the number of dimensions in a Numpy array. This can be helpful in
+            understanding the structure of your data.</p>
         <hr>
-        <pre><code class="lang-python">x<span class="hljs-selector-class">.shape</span> <span class="hljs-comment">//几乘几的array</span>
-        </code></pre>
+        <pre><code class="lang-python">x.shape // Dimensions of the array, e.g., rows x columns
+</code></pre>
+        <p>The <code>shape</code> attribute provides information about the dimensions of the array, such as the number
+            of rows and columns.</p>
         <hr>
         <ul>
-            <li>Numpy 中 Vectorization可以让array更容易计算</li>
-            <li>比较两个array之间的大小是分别比较每一个elements的大小并返回T or F</li>
+            <li><strong>Vectorization:</strong> Numpy allows you to perform operations on entire arrays, making
+                calculations more efficient.</li>
+            <li><strong>Element-wise Comparison:</strong> When comparing two arrays, Numpy compares each element
+                individually and returns True or False for each element.</li>
         </ul>
         <hr>
-        <h4 id="index">index</h4>
+        <h4 id="index">Indexing</h4>
         <ul>
-            <li>从0开始计算</li>
-            <li>像dic一样改变elements的value
-                <pre><code class="lang-python"><span class="hljs-built_in">array</span> = <span class="hljs-built_in">np</span>.arange(<span class="hljs-number">10</span>) //不包括<span class="hljs-number">10</span>
-        array_slice = <span class="hljs-built_in">array</span>.[<span class="hljs-number">5</span>:<span class="hljs-number">8</span>]
-        array_slice[<span class="hljs-number">1</span>] = <span class="hljs-number">123</span> 
-        //change value <span class="hljs-keyword">in</span> slice whill also change original <span class="hljs-built_in">array</span>，这也会改变原本<span class="hljs-built_in">array</span>中的值
-        </code></pre>
-                <h4 id="transposing-arrays">transposing arrays</h4>
-                <pre><code class="lang-python">X.<span class="hljs-built_in">reshape</span>(x,y) <span class="hljs-comment">//改变成x行y列</span>
-        </code></pre>
+            <li>Array indexing in Numpy starts from 0, similar to most programming languages.</li>
+            <li>Changing values in an array slice affects the original array:</li>
+            <pre><code class="lang-python">array = np.arange(10) // Does not include 10
+array_slice = array[5:8]
+array_slice[1] = 123 
+// Changing the value in the slice will also change the original array. This will modify the values in the original array.
+</code></pre>
+            <h4 id="transposing-arrays">Transposing Arrays</h4>
+            <pre><code class="lang-python">X.reshape(x, y) // Reshapes the array into x rows and y columns
+</code></pre>
+            <p>You can use the <code>reshape</code> function to change the dimensions of an array. This can be useful
+                when you need to transform data for specific operations.</p>
             </li>
         </ul>
-
-
-
-
     </main>
 </body>
-
-
 
 </html>
