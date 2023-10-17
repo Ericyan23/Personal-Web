@@ -1,4 +1,4 @@
-let numImages = 4;
+let numImages = 6;
 let images = [];
 
 for (let i = 1; i <= numImages; i++) {
